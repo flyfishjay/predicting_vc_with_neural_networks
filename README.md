@@ -1,11 +1,11 @@
 # predicting_vc_with_neural_networks
 
-This projects goal is to test several deep learning Neural networks in order to predict the success of 
-venture capital investements.  
+The goal of this project is to test several deep learning neural network models in order to predict the success of 
+venture capital investments.  
 
-The analysis uses an Encoder, StandardScaler and train_test_split in order 
-to preprocess the data.  Three neural network models are then tested to see if anyone of these models does a better
-job at predicting the success of the venutre investment.  All 3 models developed are saved down to a seperate folder.
+The analysis uses an Encoder, StandardScaler and train_test_split in order to preprocess the data.  
+Three neural network models are then tested to see if anyone of these models does a better
+job at predicting the success of the venture investment.  All 3 models developed are saved down to a separate folder.
 
 ## Technologies (pip list)
 This project uses Python 3.7
