@@ -5,7 +5,7 @@ venture capital investements.
 
 The analysis uses an Encoder, StandardScaler and train_test_split in order 
 to preprocess the data.  Three neural network models are then tested to see if anyone of these models does a better
-job at predicting the success of the venutre investment.  
+job at predicting the success of the venutre investment.  All 3 models developed are saved down to a seperate folder.
 
 ## Technologies (pip list)
 This project uses Python 3.7
@@ -28,6 +28,26 @@ sql
 scikit-learn
 imbalanced-learn
 
+#Imported packages:
+import pandas as pd
+from pathlib import Path
+import tensorflow as tf
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler,OneHotEncoder
+
+#Results from the first model:
+print("Original Model Results")
+
+# Evaluate the model loss and accuracy metrics using the evaluate method and the test data
+model_loss, model_accuracy = nn.evaluate(X_test_scaled, y_test, verbose =2)
+
+# Display the model loss and accuracy results
+print(f"Loss: {model_loss}, Accuracy: {model_accuracy}")
+Original Model Results
+268/268 - 0s - loss: 0.5569 - accuracy: 0.7251 - 113ms/epoch - 421us/step
+Loss: 0.5568753480911255, Accuracy: 0.7251312136650085
 
 #Usage
 Clone the github repository to run this program in Jupyter Lab 
